@@ -15,5 +15,10 @@ let countDown = setInterval(function () {
     // adesso devo calcolare la differenza tra la data di oggi e la data nella stringa
     let distance = countDownDate - now;
     console.log(distance);
+
+    // calcolo i giorni, le ore, i minuti e i secondi (ho usato un metodo consigliato da w3school, percheé non avevo idea di come farlo
+    let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    console.log(days);
+
 }, 1000);
 
