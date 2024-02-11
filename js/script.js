@@ -29,5 +29,10 @@ let countDown = setInterval(function () {
     let seconds = Math.floor((distance % (1000 * 60)) / 1000);
     console.log(seconds);
 
+    console.log(days + "giorni " + hours + "ore " + minutes + "minuti " + seconds + "secondi ");
+
+    // adesso devo stampare i giorni, le ore, i minuti e i secondi in un div
+    document.getElementById("countdown").innerText = days + " giorni " + hours + " ore " + minutes + "minuti " + seconds + " secondi ";
+
 }, 1000);
 
