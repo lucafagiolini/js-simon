@@ -11,4 +11,9 @@ let countDown = setInterval(function () {
     // prendo la data attuale di oggi e la metto in una variabile
     let now = new Date().getTime();
     console.log(now);
-}, 1000);    
+
+    // adesso devo calcolare la differenza tra la data di oggi e la data nella stringa
+    let distance = countDownDate - now;
+    console.log(distance);
+}, 1000);
+
