@@ -32,7 +32,13 @@ let countDown = setInterval(function () {
     console.log(days + "giorni " + hours + "ore " + minutes + "minuti " + seconds + "secondi ");
 
     // adesso devo stampare i giorni, le ore, i minuti e i secondi in un div
-    document.getElementById("countdown").innerText = days + " giorni " + hours + " ore " + minutes + "minuti " + seconds + " secondi ";
+    document.getElementById("countdown").innerText = days + " d " + hours + " h " + minutes + " h " + seconds + " s ";
+
+    if (distance < 0) {
+        clearInterval(countdown);
+        console.log("The countdown is over!");
+        document.getElementById("countdown").innerText = "BOOM!";
+    }
 
 }, 1000);
 
